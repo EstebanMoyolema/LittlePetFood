@@ -91,7 +91,7 @@ li {
     margin: 28px 0 28px 0;
 }
 .imgHeader {
-    background-image: url(/sources/images/imgHeader.webp);
+    background-image: url(../images/imgHeader.webp);
     background-position: center;
     height: 550px;
     width: 100%;
