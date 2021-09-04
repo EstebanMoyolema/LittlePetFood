@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="sources/images/favicon.ico">
+    <link rel="stylesheet" href="sources/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <title>Little Pet Food</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="sources/images/logo.svg" alt="littePets">
+            <ul class="menuPrincipal">
+                <li>Quienes Somos</li>
+                <li>Calcular Alimento</li>
+                <li><a href="#">Alimentos</a><span><img src="sources/images/arrowDown.svg" alt="arrowDown" height="15"></span>
+                    <ul>
+                        <li>Prefabricados</li>
+                        <li>Cocinados</li>
+                        <li>Alimentos Prohibidos</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="imgHeader">
+        <p class="textHeader">Alimenta correctamente a tu mascota</p>
+    </div>
+    <div>
+        <h1>Encuentra la comida ideal para tu mascota</h1>
+        <div>
+            <h2>Seleccione su mascota</h2>
+            <button name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
+            <button name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
+            <hr>
+            <h2>Escriba el nombre de su mascota</h2>
+            <input type="text" placeholder="ej. Pelusa">
+            <hr>
+            <h2>Seleccione la rasa de su mascota</h2>
+            <select name="dog" id="dog">
+                <option value="Mestizo">Mestizo</option>
+                <option value="Labrador Retriever">Labrador Retriever</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Pastor Alemán">Pastor Alemán</option>
+                <option value="Beagle">Beagle</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Dálmata">Dálmata</option>
+            </select>
+            <hr>
+            <h2>Edad</h2>
+            <label for="years">Años</label>
+            <input id="years" type="number">
+            <label for="month">Meses</label>
+            <input id="month" type="number">
+            <hr>
+            <h2>Peso</h2>
+            <input type="number"><span>(Kg)</span>
+            <p>El peso tiene que ser en (Kg)</p>
+            <hr>
+            <h2>Genero de la mascota</h2>
+            <button><img src="sources/images/signoMasculino.svg" alt="signoMasculino"><p>Macho</p></button>
+            <button><img src="sources/images/signoFemenino.svg" alt="signoFemenino"><p>Hembra</p></button>
+            <hr>
+            <h2>Esta esterilizado</h2>
+            <button><img src="sources/images/esterilSi.svg" alt="Esterilizado"><p>Si</p></button>
+            <button><img src="sources/images/esterilNo.svg" alt="No esterilizado"><p>No</p></button>
+            <hr>
+            <h2>Que nivel de actividad fisica realiza</h2>
+            <button>Poca Actividad</button>
+            <button>Normal</button>
+            <button>Hiperactivo</button>
+            <h2>Complexion de su cuerpo</h2>
+            <button>Delgado</button>
+            <button>Normal</button>
+            <button>Sobrepeso</button>
+            <hr>
+            <h2>Problemas de salud?</h2>
+            <button>Ninguna</button>
+            <button>Osteoartritis</button>
+            <button>Tiroides</button>
+            <button>Pancreatitis</button>
+            <button>Diabetes</button>
+            <button>Cancer</button>
+            <button>Problemas de las Articulaciones</button>
+        </div>
+    </div>
+    <footer>@Esteban M.</footer>
+    <script src="sources/js/menu.js"></script>
+</body>
+</html>
