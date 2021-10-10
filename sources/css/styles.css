@@ -14,8 +14,9 @@ a{
     color: black;
 }
 hr {
-    width: 70%;
+    width: 65%;
     margin: 35px auto 35px auto;
+    border: 1px solid #DCEDC2;
 }
 input {
     border-radius: 8px;
@@ -27,7 +28,7 @@ input {
     text-align: center;
 }
 header,ul {
-    background-color: #DCEDC2;
+    background-color: rgb(24, 225, 15);
     margin: 0;
 }
 
@@ -53,7 +54,7 @@ button {
     transition-duration: 0.4s;
 }
 button:hover {
-    background-color: #D4EE5E;
+    background-color: #21FA93 ;
     width: 150px;
     border-radius: 8px;
     border: #D4EE5E;
@@ -74,7 +75,7 @@ nav > img {
 
 li > ul{
     height: 0;
-    overflow: visible;
+    overflow: hidden;
     transition: all 0.4s;
 }
 
@@ -90,12 +91,16 @@ li {
 .menuPrincipal{
     margin: 28px 0 28px 0;
 }
-.imgHeader {
-    background-image: url(../images/imgHeader.webp);
-    background-position: center;
-    height: 550px;
-    width: 100%;
-}
 .textHeader {
     margin: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
