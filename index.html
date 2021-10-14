@@ -31,8 +31,8 @@
         <h1>Encuentra la comida ideal para tu mascota</h1>
         <div>
             <h2>Seleccione su mascota</h2>
-            <button name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
-            <button name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
+            <button id="select-perro" name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
+            <button id="select-gato" name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
             <hr>
             <h2>Escriba el nombre de su mascota</h2>
             <input type="text" placeholder="ej. Pelusa">
@@ -72,14 +72,14 @@
             <hr>
             <h2>¿Algún problema de salud?</h2>
             <div class="grid-container">
-                <div class="grid-item"><button>Problemas de las Articulaciones</button></div>
-                <div class="grid-item"><button>Osteoartritis</button></div>
-                <div class="grid-item"><button>Tiroides</button></div>
-                <div class="grid-item"><button>Pancreatitis</button></div>
-                <div class="grid-item"><button>Diabetes</button></div>
-                <div class="grid-item"><button>Cancer</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Problemas de las Articulaciones</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Osteoartritis</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Tiroides</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Pancreatitis</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Diabetes</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Cancer</button></div>
                 <div class="grid-item"></div>
-                <div class="grid-item"><button>Ninguna</button></div>
+                <div class="grid-item"><button class="btn-enfermedad">Ninguna</button></div>
             </div>
         </div>
     </div>
