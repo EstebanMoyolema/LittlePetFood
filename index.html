@@ -31,16 +31,16 @@
         <h1>Encuentra la comida ideal para tu mascota</h1>
         <div>
             <h2>Seleccione su mascota</h2>
-            <button id="select-perro" name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
-            <button id="select-gato" name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
+            <button id="selectPerro1" class="A2 normalP" name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
+            <button id="selectGato1"  class="A2 normalG" name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
             <hr>
             <h2>Escriba el nombre de su mascota</h2>
-            <input type="text" placeholder="ej. Pelusa">
+            <input id="namePet" type="text" placeholder="ej. Pelusa">
             <hr>
             <h2>Seleccione la raza de su mascota</h2>
-            <button name="#"><img id="#" src="sources/images/Formulario/raza-pena.svg" alt="raza pequena"><p></p>Raza Pequeña</p></button>
-            <button name="#"><img id="#" src="sources/images/Formulario/raza-mediana.svg" alt="raza mediana"><p></p>Raza Mediana</p></button>
-            <button name="#"><img id="#" src="sources/images/Formulario/raza-grande.svg" alt="raza grande"><p></p>Raza Grande</p></button>
+            <button class="A3 razaP" id="razaP"><img id="#" src="sources/images/Formulario/raza-pena.svg" alt="raza pequena"><p></p>Raza Pequeña</p></button>
+            <button class="A3 razaM" id="razaM"><img id="#" src="sources/images/Formulario/raza-mediana.svg" alt="raza mediana"><p></p>Raza Mediana</p></button>
+            <button class="A3 razaG" id="razaG"><img id="#" src="sources/images/Formulario/raza-grande.svg" alt="raza grande"><p></p>Raza Grande</p></button>
             <hr>
             <h2>Edad</h2>
             <label for="years">Años</label>
@@ -82,8 +82,10 @@
                 <div class="grid-item"><button class="btn-enfermedad">Ninguna</button></div>
             </div>
         </div>
+        <button type="button" class="btn-enfermedad" onClick="recogerDatos()">Enviar</button>
     </div>
     <footer>@Esteban M. y Juan Jose S.</footer>
     <script src="sources/js/menu.js"></script>
+    <script src="sources/js/recogerDatos.js"></script>
 </body>
 </html>
