@@ -35,7 +35,7 @@
             <button id="selectGato1"  class="A2 normalG" name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
             <hr>
             <h2>Escriba el nombre de su mascota</h2>
-            <input id="namePet" type="text" placeholder="ej. Pelusa">
+            <input id="namePet" type="text" placeholder="ej. Pelusa" maxlength="15">
             <hr>
             <h2>Seleccione la raza de su mascota</h2>
             <button class="A3 razaP" id="razaP"><img id="#" src="sources/images/Formulario/raza-pena.svg" alt="raza pequena"><p></p>Raza Pequeña</p></button>
@@ -44,12 +44,12 @@
             <hr>
             <h2>Edad</h2>
             <label for="years">Años</label>
-            <input id="years" type="number">
+            <input id="years" type="number" min="0" max="20">
             <label for="month">Meses</label>
-            <input id="month" type="number">
+            <input id="month" type="number" min="0" max="12">
             <hr>
             <h2>Peso</h2>
-            <input type="number"><span>(Kg)</span>
+            <input type="number" min="0" max="70.50" step="0.1"><span>(Kg)</span>
             <p>El peso tiene que ser en (Kg)</p>
             <hr>
             <h2>Sexo de la mascota</h2>
