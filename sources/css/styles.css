@@ -62,6 +62,15 @@ button:hover {
     padding-top: 15px;
     margin: 0 20px 0 20px;
 }
+.active {
+    background-color: #21FA93 ;
+    width: 150px;
+    border-radius: 8px;
+    border: #D4EE5E;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    padding-top: 15px;
+    margin: 0 20px 0 20px;
+}
 .btn-enfermedad {
     background-color: transparent;
     width: 150px;
