@@ -42,46 +42,58 @@
         <h1 id="CalcularAlimento">Encuentra la comida ideal para tu mascota</h1>
         <div>
             <h2>Seleccione su mascota</h2>
-            <button id="selectPerro1" class="A2 normalP button" name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
+            <a href="#Salto1">
+                <button id="selectPerro1" class="A2 normalP button" name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
             <button id="selectGato1"  class="A2 normalG button" name="gato"><img id="gatoButton" src="sources/images/cat.svg" alt="catButton"><p>Gato</p></button>
+            </a>
             <hr>
-            <h2>Escriba el nombre de su mascota</h2>
+            <h2 id="Salto1">Escriba el nombre de su mascota</h2>
             <input id="namePet" class="B1" type="text" placeholder="ej. Pelusa" maxlength="15">
             <hr>
             <h2>Seleccione la raza de su mascota</h2>
-            <button class="A3 razaP button" id="razaP"><img id="#" src="sources/images/Formulario/raza-pena.svg" alt="raza pequena"><p></p>Raza Pequeña</p></button>
-            <button class="A3 razaM button" id="razaM"><img id="#" src="sources/images/Formulario/raza-mediana.svg" alt="raza mediana"><p></p>Raza Mediana</p></button>
-            <button class="A3 razaG button" id="razaG"><img id="#" src="sources/images/Formulario/raza-grande.svg" alt="raza grande"><p></p>Raza Grande</p></button>
+            <a href="#Salto3">
+                <button class="A3 razaP button" id="razaP"><img id="#" src="sources/images/Formulario/raza-pena.svg" alt="raza pequena"><p></p>Raza Pequeña</p></button>
+                <button class="A3 razaM button" id="razaM"><img id="#" src="sources/images/Formulario/raza-mediana.svg" alt="raza mediana"><p></p>Raza Mediana</p></button>
+                <button class="A3 razaG button" id="razaG"><img id="#" src="sources/images/Formulario/raza-grande.svg" alt="raza grande"><p></p>Raza Grande</p></button>
+            </a>
             <hr>
-            <h2>Edad</h2>
+            <h2 id="Salto3">Edad</h2>
             <label for="years">Años</label>
             <input id="years" type="number" min="0" max="20">
             <label for="month">Meses</label>
             <input id="month" type="number" min="0" max="12">
             <hr>
-            <h2>Peso</h2>
+            <h2 id="Salto2">Peso</h2>
             <input type="number" min="1.5" max="70.50" step="0.1"><span>(Kg)</span>
             <p>El peso tiene que ser en (Kg)</p>
             <hr>
             <h2>Sexo de la mascota</h2>
-            <button class="A4 sexoM button" id="sexoM"><img src="sources/images/signoMasculino.svg" alt="signoMasculino"><p>Macho</p></button>
+            <a href="#Salto4">
+                <button class="A4 sexoM button" id="sexoM"><img src="sources/images/signoMasculino.svg" alt="signoMasculino"><p>Macho</p></button>
             <button class="A4 sexoF button" id="sexoF"><img src="sources/images/signoFemenino.svg" alt="signoFemenino"><p>Hembra</p></button>
+            </a>
             <hr>
-            <h2>¿Está esterilizado/a?</h2>
-            <button class="A5 esterS button" id="esterS"><img src="sources/images/esterilSi.svg" alt="Esterilizado"><p>Si</p></button>
+            <h2 id="Salto4">¿Está esterilizado/a?</h2>
+            <a href="#Salto5">
+                <button class="A5 esterS button" id="esterS"><img src="sources/images/esterilSi.svg" alt="Esterilizado"><p>Si</p></button>
             <button class="A5 esterN button" id="esterN"><img src="sources/images/esterilNo.svg" alt="No esterilizado"><p>No</p></button>
+            </a>
             <hr>
-            <h2>¿Qué nivel de actividad física realiza?</h2>
+            <h2 id="Salto5">¿Qué nivel de actividad física realiza?</h2>
+            <a href="#Salto6">
             <button class="A6 pocaA button" id="pocaA"><img src="sources/images/Formulario/poca-actividad.svg" alt="no realiza actividad"><P>Poca Actividad</P></button>
             <button class="A6 normalA button" id="normalA"><img src="sources/images/Formulario/normal-actividad.svg" alt="Actividad normal"><p>Normal</p></button>
             <button class="A6 muchaA button" id="muchaA"><img src="sources/images/Formulario/hiperactivo-actividad.svg" alt="Hiperactivo"><p>Hiperactivo</p></button>
+            </a>
             <hr>
-            <h2>Complexión de su cuerpo</h2>
+            <h2 id="Salto6">Complexión de su cuerpo</h2>
+            <a href="#Salto7">
             <button class="A7 delgado button" id="delgado"><img src="sources/images/Formulario/perro-delgado.svg" alt="perro delgado"><p>Delgado</p></button>
             <button class="A7 normal button" id="normal"><img src="sources/images/Formulario/perro-normal.svg" alt="peso normal"><p>Normal</p></button>
             <button class="A7 sobreP button" id="sobreP"><img src="sources/images/Formulario/perro-sobrepeso.svg" alt="perro con sobrepeso"><p>Sobrepeso</p></button>
+            </a>
             <hr>
-            <h2>¿Algún problema de salud?</h2>
+            <h2 id="Salto7">¿Algún problema de salud?</h2>
             <!-- <div class="grid-container">
                 <div class="grid-item"><button class="btn-enfermedad button">Problemas de las Articulaciones</button></div>
                 <div class="grid-item"><button class="btn-enfermedad button">Osteoartritis</button></div>
