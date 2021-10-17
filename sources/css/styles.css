@@ -7,9 +7,10 @@ body{
 header{
     padding: 10px;
     background-color: #21FA93;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
 }
 .logo{
-    width: 240px;
+    width: 180px;
 }
 nav{
     display: flex;
@@ -293,4 +294,91 @@ footer{
     padding: 10px;
     font-size: 10px;
     text-align: center;
+}
+
+/* Menu despleglable */
+.sub-ul {
+    padding: 0;
+}
+.sub-ul li{
+    padding: 0;
+}
+.nav li a {
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.nav li:hover > ul {
+    display:block;
+}
+.nav li ul li {
+    position:relative;
+}
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+.item-subM {
+    align-items: center;
+    text-align: center;
+}
+/* Boton hacia arriba */
+.go-top-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    z-index: -1;
+}
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #12E3BD;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.go-top-button i{
+    position: absolute;
+    font-size: 1.7rem;
+    top:48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #f3f3f3;
+    transition: .2s;
+}
+.show{
+    z-index: 10;
+}
+.show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 2.6rem;
+    height: 2.6rem;
+    z-index: 11;
+}
+.show i {
+    transform: translate(-50%,-50%) scale(1);
+}
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 4rem;
+        height: 4rem;
+    }
+    100%{
+        width: 3.6rem;
+        height: 3.6rem;
+    }
 }

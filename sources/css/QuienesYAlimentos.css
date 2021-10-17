@@ -1,0 +1,20 @@
+.quieSomos{
+    width: 100%;
+    display: flex;
+}
+aside {
+    width: 30%;
+    margin: 0px;
+}
+section {
+    width: 70%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #eff0f2;
+    display: flex;
+    align-items: center;
+}
+aside > img {
+    width: 100%;
+}
