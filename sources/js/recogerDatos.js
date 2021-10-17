@@ -7,8 +7,8 @@ test[i].addEventListener("click", function () {
     let activarP = document.getElementsByClassName("normalP")[0];
     //Solo selecciona una opcion
     if (this.id == "selectGato1" || this.id == "selectPerro1") {
-    activarG.className = "A2";
-    activarP.className = "A2";
+    activarG.className = "A2 button";
+    activarP.className = "A2 button";
     }
     //Solo selecciona una opcion
     if (this.id == "selectGato1") {
@@ -31,9 +31,9 @@ let razaM = document.getElementsByClassName("razaM")[0];
 let razaG = document.getElementsByClassName("razaG")[0];
 //solo selecciona una opcion
 if (this.id == "razaP" || this.id == "razaM" || this.id == "razaG") {
-    razaP.className = "A3";
-    razaM.className = "A3";
-    razaM.className = "A3";
+    razaP.className = "A3 button";
+    razaM.className = "A3 button";
+    razaM.className = "A3 button";
 }
 //solo selecciona una opcion
 if (this.id == "razaP") {
@@ -58,8 +58,8 @@ let sexoM = document.getElementsByClassName("sexoM")[0];
 let sexoF = document.getElementsByClassName("sexoF")[0];
 //solo selecciona una opcion
 if (this.id == "sexoM" || this.id == "sexoF") {
-    sexoM.className = "A4";
-    sexoF.className = "A4";
+    sexoM.className = "A4 button";
+    sexoF.className = "A4 button";
 }
 //solo selecciona una opcion
 if (this.id == "sexoM") {
@@ -78,8 +78,8 @@ let esterS = document.getElementsByClassName("esterS")[0];
 let esterN = document.getElementsByClassName("esterN")[0];
 //solo selecciona una opcion
 if (this.id == "esterS" || this.id == "esterN") {
-    esterS.className = "A5";
-    esterN.className = "A5";
+    esterS.className = "A5 button";
+    esterN.className = "A5 button";
 }
 //solo selecciona una opcion
 if (this.id == "esterS") {
@@ -99,9 +99,9 @@ let normalA = document.getElementsByClassName("normalA")[0];
 let muchaA = document.getElementsByClassName("muchaA")[0];
 //solo selecciona una opcion
 if (this.id == "pocaA" || this.id == "normalA" || this.id == "muchaA") {
-    pocaA.className = "A6";
-    normalA.className = "A6";
-    muchaA.className = "A6";
+    pocaA.className = "A6 button";
+    normalA.className = "A6 button";
+    muchaA.className = "A6 button";
 }
 //solo selecciona una opcion
 if (this.id == "pocaA") {
@@ -124,9 +124,9 @@ for (var e = 0; e < complexionC.length; e++) {
         let sobreP = document.getElementsByClassName("sobreP")[0];
         //solo selecciona una opcion
         if (this.id == "delgado" || this.id == "normal" || this.id == "sobreP") {
-            delgado.className = "A7";
-            normal.className = "A7";
-            sobreP.className = "A7";
+            delgado.className = "A7 button";
+            normal.className = "A7 button";
+            sobreP.className = "A7 button";
         }
         //solo selecciona una opcion
         if (this.id == "delgado") {
