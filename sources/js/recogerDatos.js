@@ -21,7 +21,7 @@ window.onload = function () {
   }
 };
 //Nombre de la mascota
-let nombreMascota = document.getElementById("namePet").value;
+var nombreMascota = document.getElementById('namePet').value;
 //Sleccionar raza
 let raza = document.querySelectorAll(".A3");
 for (var a = 0; a < raza.length; a++) {
@@ -141,7 +141,3 @@ for (var e = 0; e < complexionC.length; e++) {
     });
 }
 
-function validarTemporal(){
-    let data = nombreMascota;
-    console.log(data);
-}
