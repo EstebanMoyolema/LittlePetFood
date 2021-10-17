@@ -10,22 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Little Pet Food</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#">
+            <a href="index.html">
                 <img class="logo" src="sources/images/logo.svg" alt="logo">
             </a>
-            <ul class="enlaces-menu">
-                <li><a href="#">Quiénes Somos</a></li>
-                <li><a href="#">Calcular Alimento</a></li>
-                <li><a href="#">Alimentos</a><span><img src="sources/images/arrowDown.svg" alt="arrowDown" height="15"></span>
-                    <!-- <ul>
-                        <li>Prefabricados</li>
-                        <li>Cocinados</li>
-                    </ul> -->
+            <ul class="enlaces-menu nav">
+                <li><a href="#CalcularAlimento">Calcular Alimento</a></li>
+                <li><a href="sources/pages/QuienesYAlimentos.html#quieSomos">Quiénes Somos</a></li>
+                <li><a href="#">Alimentos</a>
+                    <ul class="sub-ul">
+                        <div class="item-subM">
+                            <li><a href="sources/pages/QuienesYAlimentos.html#alimentosPrefabricados">Prefabricados</a></li>
+                            <li><a href="sources/pages/QuienesYAlimentos.html#alimentosCocinados">Cocinados</a></li>
+                        </div>
+                    </ul>
                 </li>
             </ul>
             <button class="ham btn-responsive" type="button">   
@@ -36,7 +39,7 @@
         </nav>
     </header>
     <div>
-        <h1>Encuentra la comida ideal para tu mascota</h1>
+        <h1 id="CalcularAlimento">Encuentra la comida ideal para tu mascota</h1>
         <div>
             <h2>Seleccione su mascota</h2>
             <button id="selectPerro1" class="A2 normalP button" name="perro"><img id="perroButton" src="sources/images/dog.svg" alt="dogButton"><p></p>Perro</p></button>
@@ -110,23 +113,26 @@
                 <a href="#">con la mejor comida</a>
                 <a href="#">y alimentos balanceados</a>
             </div>
-
-
             <div class="box__footer">
-                <h2>Redes Sociales</h2>
+                <h2></h2>
                 <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
                 <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
                 <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
                 <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
             </div>
-
         </div>
-
         <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados © 2021 <b>Esteban M. & Juan Jose S.</b></p>
         </div>
     </footer>
+    <!-- Boton hacia arriba -->
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+    <script src="sources/js/popup.js"></script>
     <script src="sources/js/menu.js"></script>
     <script src="sources/js/recogerDatos.js"></script>
 </body>
