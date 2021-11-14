@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="sources/css/normalize.css">
     <link rel="icon" type="image/png" sizes="32x32" href="sources/images/favicon.ico">
     <link rel="stylesheet" href="sources/css/styles.css">
@@ -95,18 +96,155 @@
             <hr>
             <h2 id="Salto7">¿Algún problema de salud?</h2>
             <div class="grid-container">
-                <div class="grid-item1 btnGrid"><button class="btn-enfermedad button">Problemas de las Articulaciones</button></div>
-                <div class="grid-item2 btnGrid"><button class="btn-enfermedad button">Osteoartritis</button></div>
-                <div class="grid-item3 btnGrid"><button class="btn-enfermedad button">Tiroides</button></div>
-                <div class="grid-item4 btnGrid"><button class="btn-enfermedad button">Pancreatitis</button></div>
-                <div class="grid-item5 btnGrid"><button class="btn-enfermedad button">Diabetes</button></div>
-                <div class="grid-item6 btnGrid"><button class="btn-enfermedad button">Cancer</button></div>
+                <div class="grid-item1 btnGrid">
+                    <!-- Button trigger modal Celiaquía-->
+                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Celiaquía
+                    </button>
+                </div>
+                <div class="grid-item2 btnGrid">
+                    <!-- Button trigger Enfermedad del riñón-->
+                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal" data-bs-target="#staticBackdropRinon">
+                        Pancreatitis
+                    </button>
+                </div>
+                <div class="grid-item3 btnGrid">
+                    <!-- Button trigger modal Cálculos de estruvita-->
+                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal" data-bs-target="#staticBackdropEstruvita">
+                        Cálculos de estruvita
+                    </button>
+                </div>
+                <div class="grid-item4 btnGrid">
+                    <!-- Button trigger modal Pancreatitis-->
+                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal" data-bs-target="#staticBackdropPancreatitis">
+                        Pancreatitis
+                    </button>
+                </div>
+                <div class="grid-item5 btnGrid">
+                    <!-- Button trigger modal Diabetes-->
+                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal" data-bs-target="#staticBackdropDiabetes">
+                        Diabetes
+                    </button>
+                </div>
+                <div class="grid-item6 btnGrid">
+                    <!-- Button trigger modal Cáncer-->
+                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal" data-bs-target="#staticBackdropCancer">
+                        Cáncer
+                    </button>
+                </div>
                 <div class="grid-item8 btnGrid"><button class="btn-enfermedad button">Ninguna</button></div>
             </div>
         </div>
         <br><br><br>
         <button type="button" class="btn-enfermedad button" onClick="validarTemporal()">Enviar</button>
     </div>
+    <!-- Modals -->
+  <!-- Modal Articulaciones-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Celiaquía</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            El problema de celiaquía afecta al intestino de nuestras mascotas, por lo cual se recomienda alimentos bajos en gluten.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Cálculos de estruvita-->
+  <div class="modal fade" id="staticBackdropEstruvita" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Enfermedad del riñón</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h3>Gatos</h3>
+            Las dietas caseras (pollo, conejo) son altas en agua (70 – 75%), provocan que la orina del gato sea menos concentrada.
+            <h3>Perros</h3>
+            Las dietas caseras (pollo, pescado) son altas en agua (80 – 85%),provocan que la orina del perro sea más soluble y elimine los cálculos.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Enfermedad del riñón-->
+  <div class="modal fade" id="staticBackdropRinon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Enfermedad del riñón</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            En el caso de perros con problemas en los riñones es de suma importancia su hidratación, deberías de optar por una dieta de Pollo, Manzana y <b>Boniato</b>.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Diabetes-->
+  <div class="modal fade" id="staticBackdropDiabetes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Diabetes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Procura utilizar alimentos altos en fibra y evitando el uso de azúcares de absorción rápida. Te recomendamos que alimentes tu mascota con una dieta de pollo, ya que es más baja en grasa y eso le puede ayudar en su enfermedad.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Pancreatitis-->
+  <div class="modal fade" id="staticBackdropPancreatitis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Pancreatitis</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Te recomendamos que alimentes tu mascota con una dieta a base de pollo, ya que es más baja en grasa y esto puede ayudar en su enfermedad.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Cancer-->
+  <div class="modal fade" id="staticBackdropCancer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Mascotas con Cáncer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Puedes alimentar a tu mascota con fórmulas que contengan aceite de lino prensado en frío y aceites de pescado, esto le aportara de forma natural niveles altos de ácidos grasos poliinsaturados omega 3 y 6 que le serán beneficiosos.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
     <footer>
 
         <div class="container__footer">
@@ -149,5 +287,6 @@
     <script src="sources/js/popup.js"></script>
     <script src="sources/js/menu.js"></script>
     <script src="sources/js/recogerDatos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
