@@ -140,4 +140,45 @@ for (var e = 0; e < complexionC.length; e++) {
         }
     });
 }
-
+//Problemas de salud
+let problemSalud = document.querySelectorAll('.A8');
+for (var p = 0; p < problemSalud.length; p++) {
+    problemSalud[p].addEventListener("click", function () {
+        let celiaquia = document.getElementsByClassName("celiaquia")[0];
+        let rinion = document.getElementsByClassName("rinion")[0];
+        let estruvita = document.getElementsByClassName("estruvita")[0];
+        let pancreatitis = document.getElementsByClassName("pancreatitis")[0];
+        let diabetes = document.getElementsByClassName("diabetes")[0];
+        let cancer = document.getElementsByClassName("cancer")[0];
+        if (this.id == "celiaquia") {
+            celiaquia.className = "A8 active";
+        }
+        if (this.id == "rinion") {
+            rinion.className = "A8 active";
+        }
+        if (this.id == "estruvita") {
+            estruvita.className = "A8 active";
+        }
+        if (this.id == "pancreatitis") {
+            pancreatitis.className = "A8 active";
+        }
+        if (this.id == "diabetes") {
+            diabetes.className = "A8 active";
+        }
+        if (this.id == "cancer") {
+            cancer.className = "A8 active";
+        }
+    });
+}
+//Validar Peso en 1.Kg
+let input = document.querySelector(".input1");
+let pesMinimo = '1.5';
+input.addEventListener("change", stateHandle);
+function stateHandle() {
+  if (document.querySelector(".input1").value < 1.5) {
+    let inven = document.getElementsByClassName("hidden")[0];
+    inven.className = "alert alert-danger";
+  } else {
+    inven.className = "hidden";
+  }
+}
