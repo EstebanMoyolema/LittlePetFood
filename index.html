@@ -85,8 +85,11 @@
             <input id="month" type="number" min="0" max="11">
             <hr>
             <h2 id="Salto2">Peso</h2>
-            <input type="number" min="1.5" max="70.50" step="0.1"><span>(Kg)</span>
+            <input class="input1" type="number"  max="70.50" step="0.1"><span>(Kg)</span>
             <p>El peso tiene que ser en (Kg)</p>
+            <div class="hidden" role="alert" style="width:30% !important; margin: auto;">
+                El peso minimo para para el uso de esta aplicación es de <b>1,5Kg</b>
+            </div>
             <hr>
             <h2>Sexo de la mascota</h2>
             <a href="#Salto4">
@@ -147,51 +150,51 @@
             <div class="grid-container">
                 <div class="grid-item1 btnGrid">
                     <!-- Button trigger modal Celiaquía-->
-                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
+                    <button type="button" class="A8 celiaquia button btn btn-enfermedad" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" id="celiaquia">
                         Celiaquía
                     </button>
                 </div>
                 <div class="grid-item2 btnGrid">
                     <!-- Button trigger Enfermedad del riñón-->
-                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdropRinon">
-                        Pancreatitis
+                    <button type="button" class="A8 rinion button btn btn-enfermedad button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropRinon" id="rinion">
+                        Enfermedad del riñón
                     </button>
                 </div>
                 <div class="grid-item3 btnGrid">
                     <!-- Button trigger modal Cálculos de estruvita-->
-                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdropEstruvita">
+                    <button type="button" class="A8 estruvita btn button btn-enfermedad button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropEstruvita" id="estruvita">
                         Cálculos de estruvita
                     </button>
                 </div>
                 <div class="grid-item4 btnGrid">
                     <!-- Button trigger modal Pancreatitis-->
-                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdropPancreatitis">
+                    <button type="button" class="A8 pancreatitis button btn btn-enfermedad" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropPancreatitis" id="pancreatitis">
                         Pancreatitis
                     </button>
                 </div>
-                <div class="grid-item5 btnGrid">
+                <div class="grid-item5 btnGrid">    
                     <!-- Button trigger modal Diabetes-->
-                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdropDiabetes">
+                    <button type="button" class="A8 diabetes button btn btn-enfermedad" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropDiabetes" id="diabetes">
                         Diabetes
                     </button>
                 </div>
                 <div class="grid-item6 btnGrid">
                     <!-- Button trigger modal Cáncer-->
-                    <button type="button" class="btn btn-enfermedad button" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdropCancer">
+                    <button type="button" class="A8 cancer button btn btn-enfermedad" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropCancer" id="cancer">
                         Cáncer
                     </button>
                 </div>
-                <div class="grid-item8 btnGrid"><button class="btn-enfermedad button">Ninguna</button></div>
             </div>
         </div>
         <br><br><br>
-        <button type="button" class="btn-enfermedad button" onClick="validarTemporal()">Enviar</button>
+        <!-- Boton para validar informacion  -->
+        <button type="button" class="btn-enfermedad button" onClick="validarTemporal()">Calcular</button>
     </div>
     <!-- Modals -->
     <!-- Modal Articulaciones-->
@@ -316,43 +319,41 @@
     </div>
     <!-- Footer -->
     <footer>
-        <div class="container__footer">
-            <div class="box__footer">
                 <div class="logo">
                     <img src="Images/logo-magtimus.png" alt="">
                 </div>
-                <div class="box__footer">
-                    <form>
-                        <br>
-                        <h3>Sugerencias</h3>
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name"placeholder="Juanito Candela">
-                            <label for="mail">Email</label>
-                            <input type="mail" id="mail" placeholder="nombre@mail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="email" class="form-control" id="subject"placeholder="Cambio en ventana alimentos...">
-                        </div>
-                        <div class="form-group">
-                            <label for="body">Mensaje</label>
-                            <textarea class="form-control" id="body" rows="4" cols="50"></textarea>
-                        </div>
-                        <br>
-                        <button class="btn btn-primary btn"> Enviar</button>
-                    </form>
+                <br>
+                <div class="grid-footer">
+                    <div class="grid-footer1">
+                        <form>
+                            <br>
+                            <h3>Sugerencias</h3>
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name"placeholder="Juanito Candela">
+                                <label for="mail">Email</label>
+                                <input type="mail" id="mail" placeholder="nombre@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input style="margin: auto;" type="email" class="form-control" id="subject"placeholder="Cambio en ventana alimentos...">
+                            </div>
+                            <div class="form-group">
+                                <label for="body">Mensaje</label>
+                                <textarea class="form-control" id="body" rows="4" cols="50"></textarea>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary btn"> Enviar</button>
+                        </form>
+                    </div>
+                    <div class="who grid-footer2">
+                        <br><br><br>
+                        <h2>Quienes somos</h2>
+                        <p>
+                            Alimenta correctamente a tu mascota <br> con la mejor comida y alimentos balanceados.
+                        </p>
+                    </div>
                 </div>
-                    
-            </div>
-            <div class="box__footer who">
-                <br><br><br>
-                <h2>Quienes somos</h2>
-                <p>
-                    Alimenta correctamente a tu mascota <br> con la mejor comida y alimentos balanceados.
-                </p>
-            </div>
-        </div>
         <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados © 2021 <b>Esteban M. & Juan Jose S.</b></p>
