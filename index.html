@@ -19,13 +19,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="CalcularAlimento">
         <nav>
             <a href="index.html">
                 <img class="logo" src="sources/images/logo.svg" alt="logo">
             </a>
             <ul class="enlaces-menu nav">
-                <li><a href="#CalcularAlimento">Calcular Alimento</a></li>
+                <li><a href="#CalcularAlimento" id="CalcularAlimentoH">Calcular Alimento</a></li>
                 <li><a href="sources/pages/QuienesYAlimentos.html#quieSomos">Quiénes Somos</a></li>
                 <li><a href="#">Alimentos</a>
                     <ul class="sub-ul">
@@ -45,7 +45,7 @@
         </nav>
     </header>
     <div>
-        <h1 id="CalcularAlimento">Encuentra la comida ideal para tu mascota</h1>
+        <h1>Encuentra la comida ideal para tu mascota</h1>
         <div>
             <h2>Seleccione su mascota</h2>
             <a href="#Salto1">
@@ -194,9 +194,29 @@
         </div>
         <br><br><br>
         <!-- Boton para validar informacion  -->
-        <button type="button" class="btn-enfermedad button" onClick="validarTemporal()">Calcular</button>
+        <button type="button" data-bs-target="#staticBackdropCalcular" data-bs-toggle="modal" class="btn-calc" onClick="validarTemporal()">Calcular</button>
+        <button type="button" class="btn-danger btn" onClick="document.location.reload();">Reiniciar Formulario</button>
     </div>
     <!-- Modals -->
+    <!-- Respuesta Calculo -->
+    <div class="modal fade" id="staticBackdropCalcular" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Calculo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <b>Pelusa</b> necesita una energia diaria de <b>263 Kcal/día</b>
+                    La ración diaria ideal para <b>Pelusa</b> es de <b>180g al día.</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Ver Comidas</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal Articulaciones-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1050 !important">
