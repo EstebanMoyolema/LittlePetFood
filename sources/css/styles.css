@@ -521,6 +521,6 @@ input.nombreDMascota{
     padding: 0;
     box-shadow: none;
     margin: 0;
-    text-align: left;
+    text-align: right;
     width:85px;
 }
