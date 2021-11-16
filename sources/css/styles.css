@@ -511,3 +511,16 @@ footer{
     border-radius: 8px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+/* Estilo para nombre de la mascota en modal calculo */
+input.nombreDMascota{
+    font-weight: bold;
+    border: none ;
+    display: inline ;
+    font-family: inherit ;
+    font-size: inherit ;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    text-align: left;
+    width:85px;
+}

@@ -51,7 +51,7 @@
             <a href="#Salto1">
                 <button id="selectPerro1" class="A2 normalP button" name="perro"><img id="perroButton"
                         src="sources/images/dog.svg" alt="dogButton">
-                    <p></p>Perro</p>
+                    <p>Perro</p>
                 </button>
                 <button id="selectGato1" class="A2 normalG button" name="gato"><img id="gatoButton"
                         src="sources/images/cat.svg" alt="catButton">
@@ -60,7 +60,7 @@
             </a>
             <hr>
             <h2 id="Salto1">Escriba el nombre de su mascota</h2>
-            <input id="namePet" class="B1" type="text" placeholder="ej. Pelusa" maxlength="15">
+            <input id="namePet" class="namePet" type="text" placeholder="ej. Pelusa" maxlength="15">
             <hr>
             <h2>Seleccione la raza de su mascota</h2>
             <a href="#Salto3">
@@ -80,12 +80,12 @@
             <hr>
             <h2 id="Salto3">Edad</h2>
             <label for="years">Años</label>
-            <input id="years" type="number" min="0" max="20">
+            <input class="years" id="years" type="number" min="0" max="20">
             <label for="month">Meses</label>
-            <input id="month" type="number" min="0" max="11">
+            <input class="month" id="month" type="number" min="0" max="11">
             <hr>
             <h2 id="Salto2">Peso</h2>
-            <input class="input1" type="number"  max="70.50" step="0.1"><span>(Kg)</span>
+            <input class="input1" type="number" min="1.5" max="70.50" step="0.1"><span>(Kg)</span>
             <p>El peso tiene que ser en (Kg)</p>
             <div class="hidden" role="alert" style="width:30% !important; margin: auto;">
                 El peso minimo para para el uso de esta aplicación es de <b>1,5Kg</b>
@@ -176,7 +176,7 @@
                         Pancreatitis
                     </button>
                 </div>
-                <div class="grid-item5 btnGrid">    
+                <div class="grid-item5 btnGrid">
                     <!-- Button trigger modal Diabetes-->
                     <button type="button" class="A8 diabetes button btn btn-enfermedad" data-bs-toggle="modal"
                         data-bs-target="#staticBackdropDiabetes" id="diabetes">
@@ -194,7 +194,8 @@
         </div>
         <br><br><br>
         <!-- Boton para validar informacion  -->
-        <button type="button" data-bs-target="#staticBackdropCalcular" data-bs-toggle="modal" class="btn-calc" onClick="validarTemporal()">Calcular</button>
+        <button type="button" data-bs-target="#staticBackdropCalcular" data-bs-toggle="modal" class="btn-calc"
+            onClick="val()">Calcular</button>
         <button type="button" class="btn-danger btn" onClick="document.location.reload();">Reiniciar Formulario</button>
     </div>
     <!-- Modals -->
@@ -208,8 +209,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <b>Pelusa</b> necesita una energia diaria de <b>263 Kcal/día</b>
-                    La ración diaria ideal para <b>Pelusa</b> es de <b>180g al día.</b>
+
+                    <input class="nombreDMascota nombreResult21" type="text" readonly id="nombreResult21" value="" maxlength="15">
+
+                    necesita una energia diaria de <b>263 Kcal/día</b>
+                    La ración diaria ideal para <input class="nombreDMascota nombreResult21" type="text" readonly id="nombreResult22" value="" maxlength="15"> es de <b>180g al día.</b>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Ver Comidas</button>
@@ -339,41 +343,40 @@
     </div>
     <!-- Footer -->
     <footer>
-                <div class="logo">
-                    <img src="Images/logo-magtimus.png" alt="">
-                </div>
-                <br>
-                <div class="grid-footer">
-                    <div class="grid-footer1">
-                        <form>
-                            <br>
-                            <h3>Sugerencias</h3>
-                            <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="name"placeholder="Juanito Candela">
-                                <label for="mail">Email</label>
-                                <input type="mail" id="mail" placeholder="nombre@mail.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Asunto</label>
-                                <input style="margin: auto;" type="email" class="form-control" id="subject"placeholder="Cambio en ventana alimentos...">
-                            </div>
-                            <div class="form-group">
-                                <label for="body">Mensaje</label>
-                                <textarea class="form-control" id="body" rows="4" cols="50"></textarea>
-                            </div>
-                            <br>
-                            <button class="btn btn-primary btn"> Enviar</button>
-                        </form>
+        <br><br><br>
+        <div class="grid-footer">
+
+            <div class="grid-footer1">
+                <form>
+                    <br>
+                    <h3>Sugerencias</h3>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Juanito Candela">
+                        <label for="mail">Email</label>
+                        <input type="mail" id="mail" placeholder="nombre@mail.com">
                     </div>
-                    <div class="who grid-footer2">
-                        <br><br><br>
-                        <h2>Quienes somos</h2>
-                        <p>
-                            Alimenta correctamente a tu mascota <br> con la mejor comida y alimentos balanceados.
-                        </p>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input style="margin: auto;" type="email" class="form-control" id="subject"
+                            placeholder="Cambio en ventana alimentos...">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="body">Mensaje</label>
+                        <textarea class="form-control" id="body" rows="4" cols="35"></textarea>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary btn"> Enviar</button>
+                </form>
+            </div>
+            <div class="who grid-footer2">
+                <br><br><br>
+                <h2>Quienes somos</h2>
+                <p>
+                    Alimenta correctamente a tu mascota <br> con la mejor comida y alimentos balanceados.
+                </p>
+            </div>
+        </div>
         <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados © 2021 <b>Esteban M. & Juan Jose S.</b></p>
@@ -388,24 +391,25 @@
     <script src="sources/js/popup.js"></script>
     <script src="sources/js/menu.js"></script>
     <script src="sources/js/recogerDatos.js"></script>
+    <script src="sources/js/getData.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <!-- Smooth -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $("a[href^='#']").click(function(event) {
-        event.preventDefault();
-        
-        var location = $(this.hash);
-        var offset = 0;
-                var speed = 600;
+        $("a[href^='#']").click(function (event) {
+            event.preventDefault();
 
-        $("html,body").animate({
+            var location = $(this.hash);
+            var offset = 0;
+            var speed = 600;
+
+            $("html,body").animate({
                 scrollTop: location.offset().top - offset
-            }, speed );
+            }, speed);
             return false
-    });
+        });
     </script>
 </body>
 
