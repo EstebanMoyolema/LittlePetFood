@@ -209,14 +209,18 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
-                    <input class="nombreDMascota nombreResult21" type="text" readonly id="nombreResult21" value="" maxlength="15">
-
-                    necesita una energia diaria de <b>263 Kcal/día</b>
-                    La ración diaria ideal para <input class="nombreDMascota nombreResult21" type="text" readonly id="nombreResult22" value="" maxlength="15"> es de <b>180g al día.</b>
+                    <input class="nombreDMascota" type="text" readonly id="nombreResult21" value="">
+                    necesita una energia diaria de 
+                    <b>
+                        <input class="" type="text" readonly id="kcalpordia" value=""> Kcal/día o
+                    </b>
+                    La ración diaria ideal para <input class="nombreDMascota" type="text" readonly id="nombreResult22" value="" maxlength="15"> es de 
+                    <b>
+                        <input class="" type="text" readonly id="grpordia" value="">g al día.
+                    </b>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal">Ver Comidas</button>
+                    <button type="button" class="btn-enfermedad button btn" data-bs-dismiss="modal"><a href="/sources/pages/QuienesYAlimentos.html#alimentosPrefabricados">Ver Comidas</a></button>
                 </div>
             </div>
         </div>
@@ -366,7 +370,7 @@
                         <textarea class="form-control" id="body" rows="4" cols="35"></textarea>
                     </div>
                     <br>
-                    <button class="btn btn-primary btn"> Enviar</button>
+                    <button class="btn btn-primary btn" onclick="alert('Se envio con exito')";> Enviar</button>
                 </form>
             </div>
             <div class="who grid-footer2">
