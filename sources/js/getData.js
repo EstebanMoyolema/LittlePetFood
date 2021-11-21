@@ -25,73 +25,67 @@ document.getElementById('nombreResult21').value = dat2;
 document.getElementById('nombreResult22').value = dat2;
 
 //Calculadora
-var Kgtog=0;
-//Cachorro
-//--Raza Pequeña--
-if(dat3 == 'razaP'){
-    if(dat5 < 9 &&  dat4 == 0){
-        var Kgtog = dat6*1000;
-        var alimento = (Kgtog*1.3)/100;
-        document.getElementById('grpordia').value = alimento;
-        var megajoul = 0.38*dat6;
-        var kcal = (megajoul*239.1);
-        document.getElementById('kcalpordia').value = kcal.toFixed(0);
-    }
+if(dat1 == 'selectPerro1'){
+    console.log("Perro");
+    Perro();
+}else if(dat1 == 'selectGato1'){
+    console.log("Gato");
+
 }
-//--Raza Mediana--
-if(dat3 == 'razaM'){
-    if(dat5 < 6 &&  dat4 == 1){
-        var Kgtog = dat6*1000;
-        var alimento = (Kgtog*1.6)/100;
-        document.getElementById('grpordia').value = alimento;
-        var megajoul = 0.40*dat6;
-        var kcal = (megajoul*239.1);
-        document.getElementById('kcalpordia').value = kcal.toFixed(0);
+function Perro() {
+    //Raza pequeña ambición 
+    var gtokg = dat6*1000;
+    if(dat3 == 'razaP'){
+        if(dat4 == 0 && dat5 <= 11){//Cachorro
+            var alimento = (gtokg*1.3)/100;
+            document.getElementsByClassName("grpordia")[0].value = alimento;
+            var megajoul = 0.38*gtokg;
+            document.getElementsByClassName('kcalpordia')[0].value = megajoul.toFixed(0);
+            console.log("Raza pequeña Cachorro");
+        } else if(dat4 > 0 && dat5 >= 0){//Adulto
+            var alimento = (gtokg*2)/100;
+            document.getElementsByClassName('grpordia')[0].value = alimento;
+            var gtokg = dat6*1000;
+            var megajoul = 0.48*gtokg;
+            document.getElementsByClassName('kcalpordia')[0].value = megajoul.toFixed(0);
+            console.log("Raza pequeña Adulto");
+        }
     }
-}
-//--Raza Grande--
-if(dat3 == 'razaG'){
-    if(dat4 <= 2){
-        var KgtoG = dat6*1000;
-        var alimento = (KgtoG*1.8)/100;
-        document.getElementById('grpordia').value = alimento;
-        var megajoul = 0.45*dat6;
-        var kcal = (megajoul*239.1);
-        document.getElementById('kcalpordia').value = kcal.toFixed(0);
-    }
-}
-//Adulto
-//--Raza Pequeña--
-if(dat3 == 'razaP'){
-    if(dat5 >= 9 ||  dat4 > 0){
-        var KgtoG = dat6*1000;
-        var alimento = (KgtoG*2)/100;
-        document.getElementById('grpordia').value = alimento;
-        var megajoul = 0.48*dat6;
-        var kcal = (megajoul*239.1);
-        document.getElementById('kcalpordia').value = kcal.toFixed(0);
-    }
-}
-//--Raza Mediana--
-if(dat3 == 'razaM'){
-    if(dat5 >= 6 &&  dat4 >= 1){
-        var KgtoG = dat6*1000;
-        var alimento = (KgtoG*2.3)/100;
-        document.getElementById('grpordia').value = alimento;
-        var megajoul = 0.50*dat6;
-        var kcal = (megajoul*239.1);
-        document.getElementById('kcalpordia').value = kcal.toFixed(0);
-    }
-}
-//--Raza Grande--
-if(dat3 == 'razaG'){
-    if(dat4 > 2){
-        var KgtoG = dat6*1000;
-        var alimento = (KgtoG*2.5)/100;
-        document.getElementById('grpordia').value = alimento;
-        var megajoul = 0.52*dat6;
-        var kcal = (megajoul*239.1);
-        document.getElementById('kcalpordia').value = kcal.toFixed(0);
+    //Raza mediana
+    if(dat3 == 'razaM'){
+            if(dat4 <= 1 && dat5 <= 11){//Cachorro
+                var alimento = (gtokg*1.6)/100;
+                document.getElementsByClassName("grpordia")[0].value = alimento;
+                var gtokg = dat6*1000;
+                var megajoul = 0.40*gtokg;
+                document.getElementsByClassName("kcalpordia")[0].value = megajoul.toFixed(0);
+                console.log("Raza mediana Cachorro");
+            }else if(dat4 > 1 && dat5 >= 0){//Adulto
+                var alimento = (gtokg*2.3)/100;
+                document.getElementsByClassName("grpordia")[0].value = alimento;
+                var gtokg = dat6*1000;
+                var megajoul = 0.50*gtokg;
+                document.getElementsByClassName("kcalpordia")[0].value = megajoul.toFixed(0);
+                console.log("Raza mediana Adulto");
+            }
+    } 
+    //Raza Grande
+    if(dat3 == 'razaG'){
+        if(dat4 <= 2 && dat5 >= 0){//Cachorro
+            var alimento = (gtokg*1.8)/100;
+            document.getElementsByClassName("grpordia")[0].value = alimento;
+            var gtokg = dat6*1000;
+            var megajoul = 0.45*gtokg;
+            document.getElementsByClassName("kcalpordia")[0].value = megajoul.toFixed(0);
+            console.log("Raza grande Cachorro");
+        } else if(dat4 > 2 && dat5 >= 0){//Adulto
+            var alimento = (gtokg*2.5)/100;
+            document.getElementsByClassName("grpordia")[0].value = alimento;
+            var gtokg = dat6*1000;
+            var megajoul = 0.52*gtokg;
+            document.getElementsByClassName("kcalpordia")[0].value = megajoul.toFixed(0);
+            console.log("Raza grande Adulto");
+        }
     }
 }
     console.log(dat1,dat2,dat3,dat4,dat5,dat6,dat7,dat8,dat9,dat10);
