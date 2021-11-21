@@ -1,8 +1,17 @@
+body{
+    background-color:rgba(33, 250, 147);
+}
 section{
     font-size:25px
 }
 .quieSomos{
     width: 100%;
+}
+.grid-AU1{
+    
+    background-color:rgba(33, 250, 147);
+ 
+
 }
 
 .grid-AboutUs {
@@ -12,13 +21,16 @@ section{
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
 }
-.grid-AU1{
-    text-align: center;
-    margin: 0 auto;
-    grid-column-start: 1;
-}
+    .grid-AU1{
+        text-align: center;
+        grid-column-start: 1;
+        margin: 5% 5%;
+        padding: 3%;
+        border-radius: 15px 50px 30px;
+        border-style: solid;
+    }
 .quieSomos{
-    background-image: url(../images/backgroundAU.jpg);
+    background-image: url("../images/backgroundAU.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     grid-row-start: 1;
@@ -45,12 +57,12 @@ section{
         background-size: cover;
         grid-row-start: 1;
         height:620px;
-
     }
+
     footer{
         width: 100% !important;
         padding: 10px 0px !important;
-        background-image: url(../images/background-footer.svg) !important;
+        background-image: url("../images/background-footer.svg") !important;
         background-size: cover !important;
         margin: 0 auto !important;
         background-color: #21FA93;
