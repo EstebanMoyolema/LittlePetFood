@@ -1,20 +1,62 @@
+section{
+    font-size:25px
+}
 .quieSomos{
     width: 100%;
-    display: flex;
 }
-aside {
-    width: 30%;
-    margin: 0px;
+
+.grid-AboutUs {
+    width:100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
 }
-section {
-    width: 70%;
-    padding: 20px;
-    align-items: center;
+.grid-AU1{
     text-align: center;
-    background-color: #eff0f2;
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
+    grid-column-start: 1;
 }
-aside > img {
-    width: 100%;
+.quieSomos{
+    background-image: url(../images/backgroundAU.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row-start: 1;
+    height:620px;
+}
+@media only screen and (max-width:768px) {
+    .grid-AboutUs {
+        width:100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .textoQS{
+        font-size:25px;
+        z-index: -1;
+        position:relative;
+    }
+    .grid-footer1{
+        grid-column-start: 1 !important;
+    }
+    .quieSomos{
+        background-image: url();
+        background-size: cover;
+        grid-row-start: 1;
+        height:620px;
+
+    }
+    footer{
+        width: 100% !important;
+        padding: 10px 0px !important;
+        background-image: url(../images/background-footer.svg) !important;
+        background-size: cover !important;
+        margin: 0 auto !important;
+        background-color: #21FA93;
+        -webkit-mask-image: url("../images/background-footer.svg") !important;
+        mask-image: url("../images/background-footer.svg");
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
 }

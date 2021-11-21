@@ -461,25 +461,24 @@ footer{
     display: none;
 }
 .grid-footer {
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    gap: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
 }
 .grid-footer1{
     margin: 1%;
     grid-column-start: 1;
-    grid-row-start: 1;
+    grid-row-start: 2;
 }
 .grid-footer2{
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 1;
 }
 @media only screen and (max-width:768px) {
     .grid-footer {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: auto;
@@ -488,11 +487,11 @@ footer{
     }
     .grid-footer1{
         grid-column-start: 1 !important;
-        grid-row-start: 1 !important;
+        grid-row-start: 2 !important;
     }
     .grid-footer2{
         grid-column-start: 1 !important;
-        grid-row-start: 2 !important;
+        grid-row-start: 1 !important;
     }
 }
 
@@ -511,16 +510,7 @@ footer{
     border-radius: 8px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.mensajeFooter{
+    width: 50%;
+}  
 /* Estilo para nombre de la mascota en modal calculo */
-input.nombreDMascota{
-    font-weight: bold;
-    border: none ;
-    display: inline ;
-    font-family: inherit ;
-    font-size: inherit ;
-    padding: 0;
-    box-shadow: none;
-    margin: 0;
-    text-align: right;
-    width:85px;
-}

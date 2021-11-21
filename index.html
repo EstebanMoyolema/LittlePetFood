@@ -198,6 +198,7 @@
             onClick="val()">Calcular</button>
         <button type="button" class="btn-danger btn" onClick="document.location.reload();">Reiniciar Formulario</button>
     </div>
+    <br>
     <!-- Modals -->
     <!-- Respuesta Calculo -->
     <div class="modal fade" id="staticBackdropCalcular" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -347,38 +348,33 @@
     </div>
     <!-- Footer -->
     <footer>
-        <br><br><br>
+        <br>
         <div class="grid-footer">
-
+            <div class="who grid-footer2">
+                <h2>Quienes somos</h2>
+                <i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum corporis ad perspiciatis deserunt rerum, maxime quaerat voluptates et autem. Voluptatem adipisci laboriosam optio harum eius! Adipisci odio eius temporibus.  
+                </i>
+            </div>
             <div class="grid-footer1">
                 <form>
-                    <br>
                     <h3>Sugerencias</h3>
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Juanito Candela">
-                        <label for="mail">Email</label>
-                        <input type="mail" id="mail" placeholder="nombre@mail.com">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="name">NOMBRE</label>
+                            <input type="text" id="name" placeholder="Juanito Candela">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="mail">E-MAIL</label>
+                            <input type="mail" id="mail" placeholder="nombre@mail.com">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Asunto</label>
-                        <input style="margin: auto;" type="email" class="form-control" id="subject"
-                            placeholder="Cambio en ventana alimentos...">
+                        <label for="body">TU MENSAJE</label>
+                        <input class="mensajeFooter" type="text">
+                        <button class="btn btn-primary btn" onclick="alert('Se envio con exito')";>Enviar</button>
                     </div>
-                    <div class="form-group">
-                        <label for="body">Mensaje</label>
-                        <textarea class="form-control" id="body" rows="4" cols="35"></textarea>
-                    </div>
-                    <br>
-                    <button class="btn btn-primary btn" onclick="alert('Se envio con exito')";> Enviar</button>
                 </form>
-            </div>
-            <div class="who grid-footer2">
-                <br><br><br>
-                <h2>Quienes somos</h2>
-                <p>
-                    Alimenta correctamente a tu mascota <br> con la mejor comida y alimentos balanceados.
-                </p>
             </div>
         </div>
         <div class="box__copyright">
