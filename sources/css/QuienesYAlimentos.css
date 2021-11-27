@@ -1,74 +1,47 @@
 body{
-    background-color:rgba(33, 250, 147);
+    background-color: rgba(33, 250, 147);
 }
-section{
-    font-size:25px
-}
-.quieSomos{
-    width: 100%;
-}
-.grid-AU1{
-    
-    background-color:rgba(33, 250, 147);
- 
-
-}
-
-.grid-AboutUs {
+img{
     width:100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
 }
-    .grid-AU1{
-        text-align: center;
-        grid-column-start: 1;
-        margin: 5% 5%;
-        padding: 3%;
-        border-radius: 15px 50px 30px;
-        border-style: solid;
-    }
-.quieSomos{
-    background-image: url("../images/backgroundAU.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.parrafo{
+    font-size:23px;
+    text-align: justify;
+  text-justify: inter-word;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: 10% 15% 15% auto 10%;
+    grid-template-rows: 6% 66% 28%;
+}
+.grid-header{
     grid-row-start: 1;
-    height:620px;
+    grid-column-start: 1;
+    grid-column-end: 6;     
 }
-@media only screen and (max-width:768px) {
-    .grid-AboutUs {
-        width:100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-    .textoQS{
-        font-size:25px;
-        z-index: -1;
-        position:relative;
-    }
-    .grid-footer1{
-        grid-column-start: 1 !important;
-    }
-    .quieSomos{
-        background-image: url();
-        background-size: cover;
-        grid-row-start: 1;
-        height:620px;
-    }
-
-    footer{
-        width: 100% !important;
-        padding: 10px 0px !important;
-        background-image: url("../images/background-footer.svg") !important;
-        background-size: cover !important;
-        margin: 0 auto !important;
-        background-color: #21FA93;
-        -webkit-mask-image: url("../images/background-footer.svg") !important;
-        mask-image: url("../images/background-footer.svg");
-        -webkit-mask-size: cover;
-        mask-size: cover;
-    }
+.grid-desc{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end:4;
+    align-self: center;
+}
+.grid-img{
+    position:relative;
+    z-index: -2;
+    grid-column-start: 1;
+    grid-column-end:6;
+    grid-row-start: 2;
+    background-repeat: no-repeat;
+}
+.grid-f{
+    margin-top: -5%;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.quieSomos{
+    background-color: #21fa93CC;
+    border-radius: 15px 50px 30px;
+    padding: 20px;
+    box-shadow: 12px 12px 2px 1px #12E3BDCC;
 }

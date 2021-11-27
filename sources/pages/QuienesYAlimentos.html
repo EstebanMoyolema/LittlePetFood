@@ -20,106 +20,110 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="../../index.html">
-                <img class="logo" src="../images/logo.svg" alt="logo" />
-            </a>
-            <ul class="enlaces-menu nav">
-                <li>
-                    <a href="../../index.html#CalcularAlimento">Calcular Alimento</a>
-                </li>
-                <li><a href="#quieSomos">Quiénes Somos</a></li>
-                <li>
-                    <a href="alimentos.html">Alimentos</a>
-                    <ul class="sub-ul">
-                        <div class="item-subM">
-                            <li><a href="#alimentosPrefabricados">Prefabricados</a></li>
-                            <li><a href="#alimentosCocinados">Cocinados</a></li>
-                        </div>
+    <div class="gridContainer">
+        <div class="grid-header">
+            <header>
+                <nav>
+                    <a href="../../index.html">
+                        <img class="logo" src="../images/logo.svg" alt="logo" />
+                    </a>
+                    <ul class="enlaces-menu nav">
+                        <li>
+                            <a href="../../index.html#CalcularAlimento">Calcular Alimento</a>
+                        </li>
+                        <li><a href="#quieSomos">Quiénes Somos</a></li>
+                        <li>
+                            <a href="alimentos.html">Alimentos</a>
+                            <ul class="sub-ul">
+                                <div class="item-subM">
+                                    <li><a href="#alimentosPrefabricados">Prefabricados</a></li>
+                                    <li><a href="#alimentosCocinados">Cocinados</a></li>
+                                </div>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-            <button class="ham btn-responsive" type="button">
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
-            </button>
-        </nav>
-    </header>
-    <div class="quieSomos" id="#quieSomos">
-        <div class="grid-AboutUs">
-            <div class="grid-AU1">
-                <section>
-                    <div class="textoQS">
-                        <h1>Little pet food</h1>
-                        <p>
-                            Little Pet Food es una iniciativa creada por estudiantes de la
-                            Pontificia Universidad Católica del Ecuador con el fin de
-                            concientizar al publico ecuatoriano acerca de una mejor
-                            alimentación para nuestras mascotas. Teniendo en cuenta que no
-                            todas las mascotas son iguales e intentando abarcar sus
-                            problemas de salud mas comunes, para poder presentar distintas
-                            opciones con el fin de mejorar su salud alimentación.
-                        </p>
+                    <button class="ham btn-responsive" type="button">
+                        <span class="br-1"></span>
+                        <span class="br-2"></span>
+                        <span class="br-3"></span>
+                    </button>
+                </nav>
+            </header>
+        </div>
+        <div class="grid-desc">
+            <div class="quieSomos" id="#quieSomos">
+                <div class="grid-AboutUs">
+                    <div class="grid-AU1">
+                        <section>
+                            <div class="textoQS">
+                                <h1>Little Pet food</h1>
+                                <p class="parrafo">
+                                    Little Pet Food es una iniciativa creada por estudiantes de la
+                                    Pontificia Universidad Católica del Ecuador con el fin de
+                                    concientizar al publico ecuatoriano acerca de una mejor
+                                    alimentación para nuestras mascotas. Teniendo en cuenta que no
+                                    todas las mascotas son iguales e intentando abarcar sus
+                                    problemas de salud mas comunes, para poder presentar distintas
+                                    opciones con el fin de mejorar su salud alimentación.
+                                </p>
+                            </div>
+                        </section>
                     </div>
-                </section>
+                </div>
             </div>
+        </div>
+        <div class="grid-img">
+            <img src="../images/backgroundAU.jpg" alt="">
+        </div>
+        <div class="grid-f">
+            <!-- Footer -->
+    <footer>
+    <div class="grid-footer">
+        <div class="who grid-footer2">
+            <br>
+            <h2>Quienes somos</h2>
+            <i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                nostrum corporis ad perspiciatis deserunt rerum, maxime quaerat
+                voluptates et autem. Voluptatem adipisci laboriosam optio harum
+                eius! Adipisci odio eius temporibus.
+            </i>
+        </div>
+        <div class="grid-footer1">
+            <form>
+                <h3>Sugerencias</h3>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="name">NOMBRE</label>
+                        <input type="text" id="name" placeholder="Juanito Candela" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="mail">E-MAIL</label>
+                        <input type="mail" id="mail" placeholder="nombre@mail.com" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="body">TU MENSAJE</label>
+                    <input class="mensajeFooter" type="text" />
+                    <button class="btn btn-primary btn" onclick="alert('Se envio con exito')" ;>
+                        Enviar
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-    <!-- Footer -->
-    <footer style="
-        background-image: url('../images/background-footer.svg');
-        -webkit-mask-image: url('../images/background-footer.svg');
-        mask-image: url('../images/background-footer.svg');
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        background-size: cover;
-        margin-top: 0%;
-        background-color: #21fa93;
-        width: 100%;
-        padding: 10px 0px;
-      ">
-        <div class="grid-footer">
-            <div class="who grid-footer2">
-                <h2>Quienes somos</h2>
-                <i>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                    nostrum corporis ad perspiciatis deserunt rerum, maxime quaerat
-                    voluptates et autem. Voluptatem adipisci laboriosam optio harum
-                    eius! Adipisci odio eius temporibus.
-                </i>
-            </div>
-            <div class="grid-footer1">
-                <form>
-                    <h3>Sugerencias</h3>
-                    <div class="row">
-                        <div class="form-group col-6">
-                            <label for="name">NOMBRE</label>
-                            <input type="text" id="name" placeholder="Juanito Candela" />
-                        </div>
-                        <div class="form-group col-6">
-                            <label for="mail">E-MAIL</label>
-                            <input type="mail" id="mail" placeholder="nombre@mail.com" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="body">TU MENSAJE</label>
-                        <input class="mensajeFooter" type="text" />
-                        <button class="btn btn-primary btn" onclick="alert('Se envio con exito')" ;>
-                            Enviar
-                        </button>
-                    </div>
-                </form>
-            </div>
+    <div class="box__copyright">
+        <hr />
+        <p>
+            Todos los derechos reservados © 2021 <b>Esteban M. & Juan Jose S.</b>
+        </p>
+    </div>
+</footer>
         </div>
-        <div class="box__copyright">
-            <hr />
-            <p>
-                Todos los derechos reservados © 2021 <b>Esteban M. & Juan Jose S.</b>
-            </p>
-        </div>
-    </footer>
+    </div>
+    
+    
+    
     <script src="../js/menu.js"></script>
 </body>
 
