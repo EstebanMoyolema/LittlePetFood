@@ -494,6 +494,9 @@ footer{
         grid-column-start: 1 !important;
         grid-row-start: 1 !important;
     }
+    div input{
+        width: 80%;
+    }
 }
 
 .btn-calc{
@@ -514,4 +517,3 @@ footer{
 .mensajeFooter{
     width: 50%;
 }  
-/* Estilo para nombre de la mascota en modal calculo */
