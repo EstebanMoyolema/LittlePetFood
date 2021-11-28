@@ -1,0 +1,15 @@
+create table doit_alimentos (
+    doit_id int NOT NULL AUTO_INCREMENT,
+    doit_name varchar(50),
+    doit_kcal varchar(10),
+    doit_img  varchar(50),
+    PRIMARY KEY(doit_id)
+);
+
+create table fab_alimentos (
+	fab_id int NOT NULL AUTO_INCREMENT,
+    fab_name varchar(50),
+    fab_gram varchar(10),
+    fab_img  varchar(50),
+    PRIMARY KEY(fab_id)
+);
